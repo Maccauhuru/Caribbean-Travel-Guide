@@ -1,0 +1,23 @@
+{
+  "name": "caribbean-travel-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maccauhuru/Caribbean-Travel-Guide.git"
+  },
+  "author": "S.L.Mupfukudzwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maccauhuru/Caribbean-Travel-Guide/issues"
+  },
+  "homepage": "https://github.com/Maccauhuru/Caribbean-Travel-Guide#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  }
+}
