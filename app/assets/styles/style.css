@@ -1,3 +1,12 @@
-#h1{
-    
+$uniquePurple:#CEB5FF;
+body {
+    background-color: $uniquePurple;
+    columns: 300px 2;
+}
+
+.box {
+    a {
+        display : block;
+        padding : 10px;
+    }
 }
