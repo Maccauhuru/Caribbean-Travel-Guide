@@ -1,5 +1,9 @@
-const gulp       = require('gulp'),
-      watch      = require('gulp-watch');
+const gulp          = require('gulp'),
+      watch         = require('gulp-watch'),
+      postcss       = require('gulp-postcss'),
+      autoprefixer  = require('autoprefixer'),
+      cssvars       = require('postcss-simple-vars'),
+      nested        = require('postcss-nested');
 
 //create a default task
 gulp.task('default',()=>console.log("Hooray - Gulp File Successfully created!"));
@@ -8,7 +12,11 @@ gulp.task('default',()=>console.log("Hooray - Gulp File Successfully created!"))
 gulp.task('html',()=>console.log("Do something useful with the HTML file here!"));
 
 //Create a Styles Handle task
-gulp.task('styles',()=>console.log("SASS PostCSS tasks can run here!"));
+gulp.task('styles',()=>{
+gulp.src('./app/assets/styles/style.css')
+.pipe(postcss([cssvars , nested ,autoprefixer]))
+.pipe(gulp.dest('./app/temp/styles/'))
+});
 
 
 //create watch tasks here
