@@ -1,4 +1,10 @@
 .wrapper {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    max-width:75rem;
+    margin: 0 auto;
+
+    &--medium{
+        max-width: 976px;
+    }
 }
