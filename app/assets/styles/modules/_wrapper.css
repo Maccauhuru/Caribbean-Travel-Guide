@@ -3,8 +3,15 @@
     padding-right: 1.125rem;
     max-width:75rem;
     margin: 0 auto;
+    overflow: hidden;
+
 
     &--medium{
-        max-width: 976px;
+        max-width: 61rem;
+    }
+
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
